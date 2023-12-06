@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Restaurant</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+  background-color: #444;
+  overflow: hidden;
+  text-align: center; 
+}
+
+nav a {
+  display: inline-block; 
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    section.hero {
+background-image:url("photo-1517248135467-4c7edcad34c4.avif"); 
+     background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section.hero h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+
+    section.about,
+    section.menu,
+    section.contact {
+      padding: 40px;
+      text-align: center;
+    }
+
+    section.menu h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .menu-item p {
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .menu-item span {
+      color: #333;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    @media (max-width: 768px) {
+      section.hero {
+        height: 300px;
+      }
+      section.hero h1 {
+        font-size: 2em;
+      }
+    }
+
+    @media (max-width: 600px) {
+      section.hero {
+        height: 200px;
+      }
+      section.hero h1 {
+        font-size: 1.5em;
+      }
+    }
+    .menu-item img {
+      margin: 10px 0 0 550px ;
+      width: 170px;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Restaurant</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Welcome to My Restaurant</h1>
+    <p><b>Delicious Food in a Cozy Atmosphere</b></p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We take pride in serving high-quality, delicious meals prepared with fresh ingredients. Our cozy atmosphere
+      and friendly staff make dining with us a memorable experience.</p>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Menu</h2>
+    
+
+<div class="menu-item">
+<img src="chickenbiryani" alt="biryani">
+<div>
+      <h3>Chicken Biryani</h3>
+      <p>Fragrant basmati rice cooked with succulent pieces of chicken and aromatic spices.</p>
+    </div>
+    <span>Rs.200</span>
+  </div>
+  
+  <div class="menu-item">
+    <img src="haleem.jpeg" alt="Chicken Haleem">
+    <div>
+      <h3>Chicken Haleem</h3>
+      <p>A wholesome stew made with minced chicken, lentils, and wheat, garnished with fried onions and spices.</p>
+    </div>
+    <span>Rs.100</span>
+  </div>
+   <div class="menu-item">
+        <img src="dosa.jpeg" alt="Masala Dosa">
+        <div>
+          <h3>Masala Dosa</h3>
+          <p>Thin rice crepes filled with spiced potato mixture, served with coconut chutney and sambar.</p>
+        </div>
+        <span>Rs.50</span>
+      </div>
+  
+      <div class="menu-item">
+        <img src="idle.jpeg" alt="Idli">
+        <div>
+          <h3>Idli</h3>
+          <p>Steamed rice cakes served with coconut chutney and tangy tomato sambar.</p>
+        </div>
+        <span>Rs.60</span>
+      </div>
+  
+    </section>
+  
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out to us with any questions or reservations. We look forward to hearing from you!</p>
+    <!-- Add your contact form or information here -->
+  </section>
+
+  <footer>
+    &copy; 2023 My Restaurant
+  </footer>
+
+</body>
+
+</html>
